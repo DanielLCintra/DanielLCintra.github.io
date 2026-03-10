@@ -14,8 +14,11 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<style>
-		.newImage .image img {
-			padding: 2.7em 6em;
+		#banner .logo img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
 		}
 	</style>
 </head>
@@ -43,6 +46,7 @@
 					<li><a href="#two">Skills</a></li>
 					<li><a href="#three">Currículo & Certificações</a></li>
 					<li><a href="#four">DevFast</a></li>
+					<li><a href="#book">Livro DevFast</a></li>
 					<li><a href="#five">Curso Web Dev</a></li>
 					<li><a href="#footer">Contato</a></li>
 				</ul>
@@ -54,7 +58,7 @@
 		<section id="banner">
 			<div class="inner">
 				<div class="logo">
-					<img src="images/daniel2.jpeg" width="200px" height="200px" style="border-radius:100px;">
+					<img src="images/daniel2.jpeg" alt="Foto de Daniel Cintra">
 				</div>
 				<h2>Daniel Cintra</h2>
 				<p>Tech Lead no Itaú Unibanco | Professor na FIAP | 3x AWS Certified</p>
@@ -71,9 +75,9 @@
 			<!-- One -->
 			<section id="one" class="wrapper spotlight style1">
 				<div class="inner">
-					<a href="#" class="image"><img
-							src="https://www.udacity.com/assets/iridium/images/homepage/shared/icons/school-cards/ai_icon.png"
-							alt="" /></a>
+					<a href="#" class="image">
+						<span class="icon solid fa-user-tie" style="font-size: 3.5rem;"></span>
+					</a>
 					<div class="content">
 						<h2 class="major">Sobre mim</h2>
 						<p>Olá, sou Daniel Loureiro Cintra, um desenvolvedor de software experiente e tech lead com
@@ -101,9 +105,8 @@
 			<!-- Two -->
 			<section id="two" class="wrapper alt spotlight style2">
 				<div class="inner">
-					<a href="#" class="image"><img
-							src="https://www.udacity.com/assets/iridium/images/homepage/shared/icons/school-cards/dev_icon.png"
-							alt="" />
+					<a href="#" class="image">
+						<span class="icon solid fa-laptop-code" style="font-size: 3.5rem;"></span>
 					</a>
 					<div class="content">
 						<h2 class="major">Skills</h2>
@@ -125,7 +128,9 @@
 			<!-- Three -->
 			<section id="three" class="wrapper spotlight style3">
 				<div class="inner">
-					<a href="#" class="image"><img src="https://mberl.com/webpage.png" alt="" /></a>
+					<a href="#" class="image">
+						<span class="icon solid fa-id-card" style="font-size: 3.5rem;"></span>
+					</a>
 					<div class="content">
 						<h2 class="major">Currículo</h2>
 						<p> Fique a vontade para visualizar o meu currículo completo
@@ -177,35 +182,78 @@
 			<!-- Four - DevFast -->
 			<section id="four" class="wrapper alt style1">
 				<div class="inner">
-					<h2 class="major">DevFast - Canal no YouTube</h2>
-					<p>O <strong>DevFast</strong> é o meu canal no YouTube dedicado a ensinar programação
-						de forma rápida, clara e sem enrolação. Com mais de 150 vídeos e uma comunidade
-						crescente, o canal cobre temas como desenvolvimento web, AWS, ferramentas de
-						produtividade, inteligência artificial e muito mais.</p>
-					<p><strong>Do zero ao dev — rápido e sem enrolação!</strong> Vídeos novos toda semana
-						sobre tecnologia, programação e carreira em TI.</p>
-					<ul class="actions">
-						<li><a href="https://www.youtube.com/@DevFastOficial" class="button"
-								target="_blank">Acesse o Canal DevFast</a></li>
-					</ul>
+					<div class="row aln-middle">
+						<div class="col-4 col-12-medium">
+							<span class="image fit">
+								<img src="https://www.curso-webdev.com/assets/images/devfast-logo.png.jpeg" alt="Canal DevFast no YouTube">
+							</span>
+						</div>
+						<div class="col-8 col-12-medium">
+							<h2 class="major">DevFast - Canal no YouTube</h2>
+							<p>O <strong>DevFast</strong> é o meu canal no YouTube dedicado a ensinar programação
+								de forma rápida, clara e sem enrolação. Com mais de 150 vídeos e uma comunidade
+								crescente, o canal cobre temas como desenvolvimento web, AWS, ferramentas de
+								produtividade, inteligência artificial e muito mais.</p>
+							<p><strong>Do zero ao dev — rápido e sem enrolação!</strong> Vídeos novos toda semana
+								sobre tecnologia, programação e carreira em TI.</p>
+							<ul class="actions">
+								<li><a href="https://www.youtube.com/@DevFastOficial" class="button primary icon solid fa-play"
+										target="_blank">Acesse o Canal DevFast</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Book - DevFast -->
+			<section id="book" class="wrapper style2">
+				<div class="inner">
+					<div class="row aln-middle">
+						<div class="col-4 col-12-medium">
+							<span class="image fit">
+								<img src="https://www.curso-webdev.com/assets/images/CAPA%20LIVRO%20DEVFAST%20final.jpg" alt="Capa do livro DevFast – Do Zero ao Dev">
+							</span>
+						</div>
+						<div class="col-8 col-12-medium">
+							<h2 class="major">Livro DevFast – &quot;Do Zero ao Dev&quot;</h2>
+							<p>📖 <strong>Livro DevFast – &quot;Do Zero ao Dev&quot;</strong></p>
+							<p>O livro oficial do DevFast já está disponível:</p>
+							<ul class="actions">
+								<li><a href="https://loja.uiclap.com/titulo/ua138321/" class="button primary"
+										target="_blank">📘 Versão física</a></li>
+								<li><a href="https://amzn.to/3NV2X6u" class="button primary" target="_blank">💻 Versão
+										digital</a></li>
+							</ul>
+							<p>Um guia direto e prático pra quem quer sair do zero e entrar de vez no mundo da programação 💡</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- Five - Curso Web Dev -->
 			<section id="five" class="wrapper style3">
 				<div class="inner">
-					<h2 class="major">Curso de Desenvolvimento Web</h2>
-					<p>A <strong>Apostila de Desenvolvimento Web</strong> é uma apostila online interativa
-						que criei para ensinar desenvolvimento web moderno. Projetada para estudantes com
-						conhecimentos básicos de HTML e CSS, oferece um caminho completo de aprendizado.</p>
-					<p>O conteúdo abrange <strong>Git e Controle de Versão</strong>,
-						<strong>JavaScript</strong> (ES6+, Funções, Arrays, Objetos, Promessas) e
-						<strong>React</strong> (Componentes, Hooks, Gerenciamento de Estado e Integração
-						com APIs).</p>
-					<ul class="actions">
-						<li><a href="https://www.curso-webdev.com/?page=principal" class="button"
-								target="_blank">Acesse o Curso</a></li>
-					</ul>
+					<div class="row aln-middle">
+						<div class="col-4 col-12-medium">
+							<span class="image fit">
+								<span class="icon solid fa-code" style="font-size: 3.5rem;"></span>
+							</span>
+						</div>
+						<div class="col-8 col-12-medium">
+							<h2 class="major">Curso de Desenvolvimento Web</h2>
+							<p>A <strong>Apostila de Desenvolvimento Web</strong> é uma apostila online interativa
+								que criei para ensinar desenvolvimento web moderno. Projetada para estudantes com
+								conhecimentos básicos de HTML e CSS, oferece um caminho completo de aprendizado.</p>
+							<p>O conteúdo abrange <strong>Git e Controle de Versão</strong>,
+								<strong>JavaScript</strong> (ES6+, Funções, Arrays, Objetos, Promessas) e
+								<strong>React</strong> (Componentes, Hooks, Gerenciamento de Estado e Integração
+								com APIs).</p>
+							<ul class="actions">
+								<li><a href="https://www.curso-webdev.com/?page=principal" class="button primary icon solid fa-book-open"
+										target="_blank">Acesse o Curso</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</section>
 
