@@ -29,7 +29,7 @@
     });
   }
 
-  const sectionIds = ["sobre", "escopo", "livros", "ensino", "contato"];
+  const sectionIds = ["sobre", "escopo", "impacto", "livros", "ensino", "contato"];
   const sections = sectionIds
     .map((id) => document.getElementById(id))
     .filter(Boolean);

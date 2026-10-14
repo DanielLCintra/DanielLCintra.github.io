@@ -763,6 +763,13 @@ p:last-child {
   border-top: 1px solid var(--line);
 }
 
+.method--in-scope {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  padding-top: 0;
+  border-top: none;
+}
+
 .method__label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -830,6 +837,78 @@ p:last-child {
   margin: 0.9rem 0 0;
   font-size: 0.92rem;
   color: var(--ink-soft);
+}
+
+/* Impact — editorial proof, not cards */
+.impact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 3rem;
+  margin-top: 0.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.impact__kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 0 0 0.45rem;
+}
+
+.impact__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.65rem;
+}
+
+.impact__desc {
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+  max-width: 36rem;
+}
+
+.impact__facts {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.impact__facts li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.impact__facts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.impact__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.impact__link:hover {
+  text-decoration: underline;
 }
 
 .proof {
@@ -1690,6 +1769,11 @@ p:last-child {
 
   .scope-grid {
     grid-template-columns: 1fr;
+  }
+
+  .impact-list {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
   }
 
   .method__steps {
