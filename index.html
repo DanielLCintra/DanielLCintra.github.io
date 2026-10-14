@@ -1,305 +1,601 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-	<title>Daniel Cintra</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<style>
-		#banner .logo img {
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			object-fit: cover;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Daniel Cintra — Tech Lead, Autor & Educador</title>
+	<meta name="description"
+		content="Daniel Cintra — Tech Lead no Itaú, Instrutor Alura, Professor FIAP. Autor de Tech Lead na Prática e DevFast. Cursos, liderança e engenharia." />
+	<meta name="theme-color" content="#f3f6fa" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/site.css" />
 </head>
 
-<body class="is-preload">
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+		<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M16 20V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v14" />
+			<path d="M4 10h16v10H4z" />
+			<path d="M10 14h4" />
+		</symbol>
+		<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+			<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+		</symbol>
+		<symbol id="i-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M22 10 12 5 2 10l10 5 10-5z" />
+			<path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" />
+		</symbol>
+		<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+			<circle cx="9" cy="7" r="4" />
+			<path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+			<path d="M16 3.13a4 4 0 0 1 0 7.75" />
+		</symbol>
+		<symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="m16 18 6-6-6-6" />
+			<path d="m8 6-6 6 6 6" />
+		</symbol>
+		<symbol id="i-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M16 7h6v6" />
+			<path d="m22 7-8.5 8.5-5-5L2 17" />
+		</symbol>
+		<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="m12 2 10 6.5-10 6.5L2 8.5 12 2z" />
+			<path d="m2 15.5 10 6.5 10-6.5" />
+			<path d="m2 12 10 6.5 10-6.5" />
+		</symbol>
+		<symbol id="i-play" viewBox="0 0 24 24" fill="currentColor">
+			<path d="M8 5.14v13.72L19 12 8 5.14z" />
+		</symbol>
+		<symbol id="i-youtube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path
+				d="M2.5 17a2.4 2.4 0 0 1-.5-1.5V8.5A2.4 2.4 0 0 1 2.5 7C4 5.5 8 5 12 5s8 .5 9.5 2a2.4 2.4 0 0 1 .5 1.5v7a2.4 2.4 0 0 1-.5 1.5c-1.5 1.5-5.5 2-9.5 2s-8-.5-9.5-2" />
+			<path d="m10 9 5 3-5 3z" />
+		</symbol>
+		<symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="m4 17 6-6-6-6" />
+			<path d="M12 19h8" />
+		</symbol>
+		<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+			<path d="m22 6-10 7L2 6" />
+		</symbol>
+		<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path
+				d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.35a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.75.34 1.54.57 2.35.7A2 2 0 0 1 22 16.92z" />
+		</symbol>
+		<symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+			<rect x="2" y="9" width="4" height="12" />
+			<circle cx="4" cy="4" r="2" />
+		</symbol>
+		<symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path
+				d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4" />
+			<path d="M9 18c-4.5 1.5-4.5-2.5-7-3" />
+		</symbol>
+		<symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+			<circle cx="12" cy="10" r="3" />
+		</symbol>
+		<symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path
+				d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+			<path d="m9 12 2 2 4-4" />
+		</symbol>
+		<symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+			<path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+			<line x1="12" x2="12" y1="19" y2="22" />
+		</symbol>
+		<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+			stroke-linecap="round" stroke-linejoin="round">
+			<path d="M5 12h14" />
+			<path d="m12 5 7 7-7 7" />
+		</symbol>
+	</svg>
 
-	<!-- Page Wrapper -->
-	<div id="page-wrapper">
+	<div class="bg-mesh" aria-hidden="true"></div>
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Daniel Cintra</a></h1>
-			<nav>
-				<a href="#menu">Menu</a>
+	<header class="site-header">
+		<div class="site-header__inner">
+			<a class="brand" href="#topo">Daniel Cintra</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+				aria-label="Abrir menu">
+				<span></span><span></span><span></span>
+			</button>
+			<nav id="menu-principal" aria-label="Principal">
+				<ul class="nav-list">
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#livros">Livros</a></li>
+					<li><a href="#ensino">Ensino</a></li>
+					<li><a class="nav-cta" href="#contato">Contato</a></li>
+				</ul>
 			</nav>
-		</header>
+		</div>
+	</header>
 
-		<!-- Menu -->
-		<nav id="menu">
-			<div class="inner">
-				<h2>Menu</h2>
-				<ul class="links">
-					<li><a href="#banner">Home</a></li>
-					<li><a href="#one">Sobre</a></li>
-					<li><a href="#two">Skills</a></li>
-					<li><a href="#three">Currículo & Certificações</a></li>
-					<li><a href="#four">DevFast</a></li>
-					<li><a href="#book">Livro DevFast</a></li>
-					<li><a href="#five">Curso Web Dev</a></li>
-					<li><a href="#footer">Contato</a></li>
-				</ul>
-				<a href="#" class="close">Close</a>
+	<main id="topo">
+		<!-- 1. Quem sou -->
+		<section class="hero" aria-label="Apresentação">
+			<div class="hero__visual">
+				<img src="images/profile_image_daniel.png" width="800" height="800"
+					alt="Retrato profissional de Daniel Cintra" fetchpriority="high" />
 			</div>
-		</nav>
-
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<div class="logo">
-					<img src="images/daniel2.jpeg" alt="Foto de Daniel Cintra">
+			<div class="hero__copy">
+				<div class="hero__copy-inner">
+					<p class="hero__eyebrow">Tech Lead · Autor · Educador</p>
+					<h1 class="hero__name">Daniel Cintra</h1>
+					<p class="hero__headline">De excelência técnica à liderança de pessoas, sistemas e decisões.</p>
+					<p class="hero__lede">Mais de 19 anos em TI. Lidero engenharia no Itaú, ensino na Alura e na FIAP, e
+						escrevo para quem está nessa transição — ou já vive nela.</p>
+					<div class="btn-row">
+						<a class="btn btn--primary" href="#livros">Conhecer os livros</a>
+						<a class="btn btn--ghost" href="#ensino">Ver ensino</a>
+					</div>
 				</div>
-				<h2>Daniel Cintra</h2>
-				<p>Tech Lead no Itaú Unibanco | Professor na FIAP | 3x AWS Certified</p>
-				<p>+18 anos de experiência em TI, focado no ecossistema JavaScript moderno.</p>
-				<p>Certificações Ágeis: PSM I, SMPC, PACC-A, KEPC, Management 3.0</p>
-				<p>AWS: Cloud Practitioner, AI Practitioner & Solutions Architect – Associate</p>
-				<p>Apaixonado por tecnologia, inovação e liderança técnica.</p>
 			</div>
 		</section>
 
-		<!-- Wrapper -->
-		<section id="wrapper">
-
-			<!-- One -->
-			<section id="one" class="wrapper spotlight style1">
-				<div class="inner">
-					<a href="#" class="image">
-						<span class="icon solid fa-user-tie" style="font-size: 3.5rem;"></span>
-					</a>
-					<div class="content">
-						<h2 class="major">Sobre mim</h2>
-						<p>Olá, sou Daniel Loureiro Cintra, um desenvolvedor de software experiente e tech lead com
-							mais de 18 anos de experiência em TI. Nos últimos 11 anos, tenho focado no ecossistema
-							JavaScript moderno — trabalhando com ES6, Vue.js, React, React Native e Node.js — e
-							liderei projetos em setores como transporte, agroindústria, educação, finanças e
-							mercado imobiliário.</p>
-
-						<p>Atualmente, como Tech Lead no Itaú Unibanco, lidero o desenvolvimento de aplicações
-							cloud-native escaláveis com AWS, enquanto fomento equipes ágeis e de alta performance.
-							Também atuo como Professor na FIAP, ensinando desenvolvimento web com foco em
-							JavaScript.</p>
-
-						<p>Possuo expertise em design técnico, otimização de processos e liderança de equipes.
-							Sou formado em Administração de Empresas e Técnico em Informática, e completei uma
-							especialização em Ciência de Dados e Inteligência Artificial pela PUC-RS.</p>
-
-						<p>Se quiser ver uma linha do tempo detalhada de todas as minhas experiências profissionais,
-							acesse o meu <a href="https://www.linkedin.com/in/daniel-cintra-460a7218/"
-								target="_blank">LinkedIn</a>.</p>
+		<!-- 2. Contexto + prova de atuação -->
+		<section id="sobre" class="section">
+			<div class="section__inner reveal">
+				<p class="section__label">Sobre</p>
+				<div class="about-grid">
+					<div>
+						<h2 class="section__title">Engenharia com critério. Liderança com gente.</h2>
+					</div>
+					<div class="about-body">
+						<p>Sou <strong>Daniel Loureiro Cintra</strong> — engenheiro de software, educador e autor. Em
+							quase duas décadas passei por transporte, agroindústria, educação, finanças e e-commerce.
+							O fio condutor é o mesmo: construir com qualidade e ajudar times a decidir melhor.</p>
+						<p>Hoje o trabalho se divide em três frentes que se alimentam: <strong>produção</strong> (Tech
+							Lead no Itaú), <strong>formação</strong> (Alura e FIAP) e <strong>conteúdo</strong> (livros,
+							cursos e comunidade). Formado em Administração, técnico em Informática, com especialização
+							em Ciência de Dados e IA pela PUC-RS.</p>
 					</div>
 				</div>
-			</section>
 
-			<!-- Two -->
-			<section id="two" class="wrapper alt spotlight style2">
-				<div class="inner">
-					<a href="#" class="image">
-						<span class="icon solid fa-laptop-code" style="font-size: 3.5rem;"></span>
-					</a>
-					<div class="content">
-						<h2 class="major">Skills</h2>
-						<p>JavaScript (ES6, Vue.js, React, React Native, Node.js, Next.js)</p>
-						<p>Python & Java</p>
-						<p>AWS (Cloud Practitioner, AI Practitioner, Solutions Architect – Associate)</p>
-						<p>HTML 5 / CSS 3</p>
-						<p>Metodologias Ágeis: PSM I, SMPC, PACC-A, KEPC, Management 3.0</p>
-						<p>Design Técnico, Otimização de Processos e Liderança de Equipes</p>
-						<p>Ciência de Dados e Inteligência Artificial</p>
-						<p>Docker & Kubernetes</p>
-						<p>Versionamento: Git, Gitflow (GitHub, Bitbucket)</p>
-						<p>Mobile: Flutter e React Native</p>
-						<p>Inglês: Full Professional Proficiency (EF SET C2 - 81/100)</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Three -->
-			<section id="three" class="wrapper spotlight style3">
-				<div class="inner">
-					<a href="#" class="image">
-						<span class="icon solid fa-id-card" style="font-size: 3.5rem;"></span>
-					</a>
-					<div class="content">
-						<h2 class="major">Currículo</h2>
-						<p> Fique a vontade para visualizar o meu currículo completo
-							<a href="https://www.linkedin.com/in/daniel-cintra-460a7218/"
-								target="_blank">no meu LinkedIn</a></p>
-
-							<h2 class="major">Certificações</h2>
-
-							<p>AWS Certified Solutions Architect – Associate - Amazon Web Services (AWS)</p>
-
-							<p>AWS Certified AI Practitioner - Amazon Web Services (AWS)</p>
-
-							<p>AWS Certified Cloud Practitioner - Amazon Web Services (AWS)</p>
-
-							<p>Docker & Kubernetes: The Practical Guide</p>
-
-							<p>Practitioner - D&A Foundation</p>
-
-							<p>AWS Educate Introduction to Generative AI - Amazon Web Services (AWS)</p>
-
-							<p>EF SET English Certificate 81/100 (C2 Proficient) - EF Standard English Test - Issued Feb 2021</p>
-
-							<p>PACC-A - Professional Agile Coach Certified Accredited - Agile Institute Brazil - Issued Jan 2021 -
-								Credential ID A2021-0877</p>
-
-							<p>Professional Scrum Master I (PSM I) - Scrum.org - Issued Nov 2020 -
-								Credential ID 592814 <a
-								href="https://drive.google.com/file/d/1POzHdwMr-yCm_opfWdMJr34ETeTLhY5v/view?usp=sharing"
-								target="_blank">Ver Credencial</a></p>
-							
-							<p>Scrum Master Professional Certificate (SMPC) - CertiProf - Issued Aug 2020 <a
-								href="https://drive.google.com/file/d/1-2R5N80ngCDSi_4eku6_jg-ob5Il-F1I/view?usp=sharing"
-								target="_blank">Ver Credencial</a></p>
-
-							<p>Scrum Foundation Professional Certificate (SFPC) - CertiProf - Issued Jun 2020 <a
-									href="https://drive.google.com/file/d/1Qzev2zozGsIJ543HbyVu1-QHVOqdydms/view?usp=sharing"
-									target="_blank">Ver Credencial</a></p>
-
-							<p>Scrum Fundamentals Certified (SFC) - SCRUMstudy - Issued Apr 2019 - Expires Apr 2022 -
-								Credential ID 700182 - <a
-									href="http://81cd1176253f3f59d435-ac22991740ab4ff17e21daf2ed577041.r77.cf1.rackcdn.com/Certificates/ScrumFundamentalsCertified-DanielCintra-700182.pdf"
-									target="_blank">Ver Credencial</a></p>
-							
-
-					</div>
-				</div>
-			</section>
-
-			<!-- Four - DevFast -->
-			<section id="four" class="wrapper alt style1">
-				<div class="inner">
-					<div class="row aln-middle">
-						<div class="col-4 col-12-medium">
-							<span class="image fit">
-								<img src="https://www.curso-webdev.com/assets/images/devfast-logo.png.jpeg" alt="Canal DevFast no YouTube">
+				<div class="roles">
+					<article class="role">
+						<div class="role__org">
+							<span class="icon-badge" aria-hidden="true">
+								<svg class="icon"><use href="#i-briefcase"></use></svg>
 							</span>
+							<span>Itaú Unibanco</span>
 						</div>
-						<div class="col-8 col-12-medium">
-							<h2 class="major">DevFast - Canal no YouTube</h2>
-							<p>O <strong>DevFast</strong> é o meu canal no YouTube dedicado a ensinar programação
-								de forma rápida, clara e sem enrolação. Com mais de 150 vídeos e uma comunidade
-								crescente, o canal cobre temas como desenvolvimento web, AWS, ferramentas de
-								produtividade, inteligência artificial e muito mais.</p>
-							<p><strong>Do zero ao dev — rápido e sem enrolação!</strong> Vídeos novos toda semana
-								sobre tecnologia, programação e carreira em TI.</p>
-							<ul class="actions">
-								<li><a href="https://www.youtube.com/@DevFastOficial" class="button primary icon solid fa-play"
-										target="_blank">Acesse o Canal DevFast</a></li>
-							</ul>
+						<div>
+							<p class="role__title">Tech Lead</p>
+							<p class="role__meta">Desde fev. 2026 · São Paulo</p>
+							<p class="role__desc">Jornadas digitais de crédito, cloud-native na AWS, confiabilidade e
+								times de alta performance.</p>
 						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Book - DevFast -->
-			<section id="book" class="wrapper style2">
-				<div class="inner">
-					<div class="row aln-middle">
-						<div class="col-4 col-12-medium">
-							<span class="image fit">
-								<img src="https://www.curso-webdev.com/assets/images/CAPA%20LIVRO%20DEVFAST%20final.jpg" alt="Capa do livro DevFast – Do Zero ao Dev">
+					</article>
+					<article class="role">
+						<div class="role__org">
+							<span class="icon-badge" aria-hidden="true">
+								<svg class="icon"><use href="#i-book"></use></svg>
 							</span>
+							<span>Alura</span>
 						</div>
-						<div class="col-8 col-12-medium">
-							<h2 class="major">Livro DevFast – &quot;Do Zero ao Dev&quot;</h2>
-							<p>📖 <strong>Livro DevFast – &quot;Do Zero ao Dev&quot;</strong></p>
-							<p>O livro oficial do DevFast já está disponível:</p>
-							<ul class="actions">
-								<li><a href="https://loja.uiclap.com/titulo/ua138321/" class="button primary"
-										target="_blank">📘 Versão física</a></li>
-								<li><a href="https://amzn.to/3NV2X6u" class="button primary" target="_blank">💻 Versão
-										digital</a></li>
-							</ul>
-							<p>Um guia direto e prático pra quem quer sair do zero e entrar de vez no mundo da programação 💡</p>
+						<div>
+							<p class="role__title">Instrutor</p>
+							<p class="role__meta">Desde mar. 2026 · São Paulo</p>
+							<p class="role__desc">Cursos de liderança técnica, qualidade de código e alinhamento entre
+								engenharia e produto.</p>
 						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Five - Curso Web Dev -->
-			<section id="five" class="wrapper style3">
-				<div class="inner">
-					<div class="row aln-middle">
-						<div class="col-4 col-12-medium">
-							<span class="image fit">
-								<span class="icon solid fa-code" style="font-size: 3.5rem;"></span>
+					</article>
+					<article class="role">
+						<div class="role__org">
+							<span class="icon-badge" aria-hidden="true">
+								<svg class="icon"><use href="#i-graduation"></use></svg>
 							</span>
+							<span>FIAP</span>
 						</div>
-						<div class="col-8 col-12-medium">
-							<h2 class="major">Curso de Desenvolvimento Web</h2>
-							<p>A <strong>Apostila de Desenvolvimento Web</strong> é uma apostila online interativa
-								que criei para ensinar desenvolvimento web moderno. Projetada para estudantes com
-								conhecimentos básicos de HTML e CSS, oferece um caminho completo de aprendizado.</p>
-							<p>O conteúdo abrange <strong>Git e Controle de Versão</strong>,
-								<strong>JavaScript</strong> (ES6+, Funções, Arrays, Objetos, Promessas) e
-								<strong>React</strong> (Componentes, Hooks, Gerenciamento de Estado e Integração
-								com APIs).</p>
-							<ul class="actions">
-								<li><a href="https://www.curso-webdev.com/?page=principal" class="button primary icon solid fa-book-open"
-										target="_blank">Acesse o Curso</a></li>
-							</ul>
+						<div>
+							<p class="role__title">Professor</p>
+							<p class="role__meta">Desde fev. 2025 · São Paulo</p>
+							<p class="role__desc">Desenvolvimento web com foco em JavaScript no frontend, turmas
+								presenciais e online.</p>
 						</div>
-					</div>
+					</article>
 				</div>
-			</section>
 
+				<div class="skills-block">
+					<p class="skills-block__label">No dia a dia</p>
+					<ul class="skills-cloud">
+						<li>JavaScript / TypeScript</li>
+						<li>React · Next.js · Vue</li>
+						<li>Node.js · Python · Java</li>
+						<li>AWS · Docker · Kubernetes</li>
+						<li>Arquitetura cloud-native</li>
+						<li>Liderança técnica</li>
+						<li>Agile · Scrum</li>
+						<li>IA no fluxo de engenharia</li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
-		<!-- Footer -->
-		<section id="footer">
-			<div class="inner">
-				<h2 class="major">Entre em contato</h2>
-				<p>Ai embaixo estão os links para os meus perfis do linkedin, github, facebook.. fique a vontade para
-					ver um pouco do que eu já fiz, empresas que eu já trabalhei e caso queirar trabalhar comigo, mande
-					uma msg =)</p>
-				<ul class="contact">
-					<li class="icon solid fa-home">
-						São Paulo, SP - Brasil
+		<!-- 3. O que publiquei -->
+		<section id="livros" class="books">
+			<div class="books__intro section__inner reveal">
+				<p class="section__label">Livros</p>
+				<h2 class="section__title">Do código à cadeira de Tech Lead — e do zero ao primeiro emprego.</h2>
+				<p class="section__intro">Dois livros, dois momentos da carreira: liderança técnica na prática e a
+					entrada no mundo da programação.</p>
+			</div>
+
+			<div class="book-feature">
+				<div class="book-feature__grid reveal">
+					<div class="book-cover">
+						<img src="images/tech-lead-na-pratica.jpg" width="1696" height="2528"
+							alt="Capa do livro Tech Lead na Prática" />
+					</div>
+					<div class="book-feature__copy">
+						<p class="section__label">Destaque</p>
+						<h3 class="book-feature__name">Tech Lead na Prática</h3>
+						<p class="book-feature__sub">Da excelência técnica à liderança de pessoas, sistemas e decisões
+						</p>
+						<p class="book-authors">Daniel Cintra e Sérgio Cintra · 1ª edição · Kindle e físico</p>
+						<p>Ser Tech Lead não é o próximo degrau do desenvolvedor — é mudar de ofício. Com copilotos e IA
+							no fluxo, a entrega acelera; julgamento e pessoas continuam sendo seus. Critério de
+							produção: code review, qualidade, governança de IA, feedback e decisão sob pressão.</p>
+						<ul class="book-tags" aria-label="Temas">
+							<li>Tech Lead</li>
+							<li>Liderança</li>
+							<li>Kindle</li>
+						</ul>
+						<div class="btn-row">
+							<a class="btn btn--primary" href="https://www.amazon.com.br/dp/B0H7JX8TG8" target="_blank"
+								rel="noopener noreferrer">Comprar na Amazon</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section books-secondary">
+				<div class="section__inner reveal">
+					<article class="book-row">
+						<div class="book-row__cover">
+							<img src="images/devfast-do-zero-ao-dev.jpg" width="1283" height="2048"
+								alt="Capa do livro DevFast — Do Zero ao Dev" loading="lazy" />
+						</div>
+						<div class="book-row__copy">
+							<p class="section__label">Também na estante</p>
+							<h3 class="book-row__title">DevFast — Do Zero ao Dev</h3>
+							<p>Guia direto para sair do zero e entrar na programação: HTML, CSS, JavaScript, React e o
+								que o mercado espera — sem promessas mágicas. Nasceu da comunidade DevFast.</p>
+							<div class="btn-row">
+								<a class="btn btn--accent" href="https://www.amazon.com.br/dp/B0G5HJSZFK" target="_blank"
+									rel="noopener noreferrer">Kindle na Amazon</a>
+								<a class="btn btn--ghost" href="https://loja.uiclap.com/titulo/ua138321/" target="_blank"
+									rel="noopener noreferrer">Versão física</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4. Como ensino / escala o conhecimento -->
+		<section id="ensino" class="section">
+			<div class="section__inner reveal">
+				<p class="section__label">Ensino</p>
+				<h2 class="section__title">O que vivo no trabalho, ensino na plataforma.</h2>
+				<p class="section__intro">Cursos na Alura, conversa aberta sobre carreira e conteúdo gratuito para quem
+					está começando.</p>
+
+				<article class="interview-inline">
+					<a class="interview__thumb"
+						href="https://www.youtube.com/watch?v=m4qPmVHfemo&t=30s"
+						target="_blank" rel="noopener noreferrer"
+						aria-label="Assistir entrevista na Alura">
+						<img src="images/entrevista-alura-tech-lead.jpg" width="1280" height="720"
+							alt="Thumbnail da entrevista na Alura" loading="lazy" />
+						<span class="interview__play" aria-hidden="true">
+							<svg class="icon icon--lg"><use href="#i-play"></use></svg>
+						</span>
+					</a>
+					<div>
+						<p class="section__label">
+							<svg class="icon icon--sm" aria-hidden="true"><use href="#i-mic"></use></svg>
+							Entrevista · Alura
+						</p>
+						<h3 class="interview-inline__title">Tech Lead não é o mais técnico do time</h3>
+						<p>Conversa sobre a jornada até a liderança técnica: o que muda quando você passa a cuidar de
+							pessoas, critérios e decisões — não só de código.</p>
+						<a class="btn btn--accent" href="https://www.youtube.com/watch?v=m4qPmVHfemo&t=30s"
+							target="_blank" rel="noopener noreferrer">
+							<svg class="icon icon--sm" aria-hidden="true"><use href="#i-youtube"></use></svg>
+							Assistir no YouTube
+						</a>
+					</div>
+				</article>
+
+				<h3 class="subhead">Cursos na Alura</h3>
+				<div class="course-list">
+					<article class="course">
+						<div class="course__aside">
+							<span class="icon-tile" aria-hidden="true">
+								<svg class="icon"><use href="#i-users"></use></svg>
+							</span>
+							<div class="course__meta">
+								<span>12 h</span>
+								<span>Inovação &amp; Gestão</span>
+							</div>
+						</div>
+						<div class="course__body">
+							<h3 class="course__title">Liderança técnica e alinhamento entre engenharia e negócio</h3>
+							<p class="course__desc">Papel do tech lead, influência, alinhamento com produto, feedback e
+								uso consciente de IA.</p>
+							<a class="btn btn--accent"
+								href="https://www.alura.com.br/curso-online-techlead-lideranca-tecnica" target="_blank"
+								rel="noopener noreferrer">
+								Ver curso
+								<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+							</a>
+						</div>
+					</article>
+					<article class="course">
+						<div class="course__aside">
+							<span class="icon-tile" aria-hidden="true">
+								<svg class="icon"><use href="#i-code"></use></svg>
+							</span>
+							<div class="course__meta">
+								<span>12 h</span>
+								<span>Inovação &amp; Gestão</span>
+							</div>
+						</div>
+						<div class="course__body">
+							<h3 class="course__title">Qualidade de código: Code Review, métricas e governança</h3>
+							<p class="course__desc">Clean Code, reviews em camadas, SonarCloud, IA no fluxo e gestão de
+								dívida técnica.</p>
+							<a class="btn btn--accent"
+								href="https://www.alura.com.br/curso-online-qualidade-codigo-code-review" target="_blank"
+								rel="noopener noreferrer">
+								Ver curso
+								<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+							</a>
+						</div>
+					</article>
+					<article class="course">
+						<div class="course__aside">
+							<span class="icon-tile" aria-hidden="true">
+								<svg class="icon"><use href="#i-trending"></use></svg>
+							</span>
+							<div class="course__meta">
+								<span>16 h</span>
+								<span>Gestão &amp; Negócios</span>
+							</div>
+						</div>
+						<div class="course__body">
+							<h3 class="course__title">Guiar times para alta performance</h3>
+							<p class="course__desc">Diagnóstico do time, delegação, feedback, desenvolvimento de pessoas
+								e IA com responsabilidade.</p>
+							<a class="btn btn--accent"
+								href="https://cursos.alura.com.br/course/tech-lead-guiar-times-alta-performance"
+								target="_blank" rel="noopener noreferrer">
+								Ver curso
+								<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+							</a>
+						</div>
+					</article>
+					<article class="course">
+						<div class="course__aside">
+							<span class="icon-tile" aria-hidden="true">
+								<svg class="icon"><use href="#i-layers"></use></svg>
+							</span>
+							<div class="course__meta">
+								<span>8 h</span>
+								<span>Gestão &amp; Negócios</span>
+							</div>
+						</div>
+						<div class="course__body">
+							<h3 class="course__title">Alinhar engenharia ao ciclo de vida do produto</h3>
+							<p class="course__desc">Discovery, roadmaps técnicos, trade-offs e decisões com impacto no
+								negócio.</p>
+							<a class="btn btn--accent"
+								href="https://cursos.alura.com.br/course/produto-para-techlead-decisao-tecnica"
+								target="_blank" rel="noopener noreferrer">
+								Ver curso
+								<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+							</a>
+						</div>
+					</article>
+				</div>
+
+				<h3 class="subhead">Comunidade &amp; material gratuito</h3>
+				<div class="community-grid">
+					<article class="community-item">
+						<span class="icon-tile" aria-hidden="true">
+							<svg class="icon"><use href="#i-youtube"></use></svg>
+						</span>
+						<div>
+							<h3 class="community-item__title">DevFast no YouTube</h3>
+							<p>Web, AWS, produtividade, IA e carreira — rápido e sem enrolação.</p>
+							<a href="https://www.youtube.com/@DevFastOficial" target="_blank"
+								rel="noopener noreferrer">Assistir canal
+								<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+							</a>
+						</div>
+					</article>
+					<article class="community-item">
+						<span class="icon-tile" aria-hidden="true">
+							<svg class="icon"><use href="#i-terminal"></use></svg>
+						</span>
+						<div>
+							<h3 class="community-item__title">Apostila de Desenvolvimento Web</h3>
+							<p>Git, JavaScript moderno e React — para quem já tem HTML e CSS.</p>
+							<a href="https://www.curso-webdev.com/?page=principal" target="_blank"
+								rel="noopener noreferrer">Acessar apostila
+								<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+							</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Credenciais (sem item de menu — apoio ao storytelling) -->
+		<section id="credenciais" class="section section--tight-top creds-band">
+			<div class="section__inner reveal">
+				<p class="section__label">Credenciais</p>
+				<h2 class="section__title">Base que sustenta a prática.</h2>
+				<ul class="certs">
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>AWS Solutions Architect – Associate</strong>
+							<span>Amazon Web Services</span>
+						</div>
 					</li>
-					<li class="icon solid fa-phone">(11) 93390-6518</li>
-					<li class="icon solid fa-envelope">cintra.70@gmail.com</li>
-					<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/daniel-cintra-460a7218/"
-							target="_blank">https://www.linkedin.com/in/daniel-cintra-460a7218/</a></li>
-						<li class="icon brands fa-github"><a href="https://github.com/DanielLCintra"
-							target="_blank">https://github.com/DanielLCintra</a></li>
-						<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@DevFastOficial"
-							target="_blank">https://www.youtube.com/@DevFastOficial</a></li>
-						<li class="icon brands fa-facebook"><a href="https://www.facebook.com/dcintra2"
-							target="_blank">https://www.facebook.com/dcintra2</a></li>
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>AWS AI Practitioner</strong>
+							<span>Amazon Web Services</span>
+						</div>
+					</li>
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>AWS Cloud Practitioner</strong>
+							<span>Amazon Web Services</span>
+						</div>
+					</li>
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>Professional Scrum Master I</strong>
+							<span>Scrum.org</span>
+						</div>
+					</li>
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>PACC-A · SMPC · SFPC</strong>
+							<span>Agile / CertiProf</span>
+						</div>
+					</li>
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>Inglês C2 · EF SET 81</strong>
+							<span>Full professional proficiency</span>
+						</div>
+					</li>
 				</ul>
-				<ul class="copyright">
-					<li>&copy; Daniel Cintra. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
+				<p class="certs-note">
+					Linha do tempo completa no
+					<a href="https://www.linkedin.com/in/daniel-cintra-460a7218/" target="_blank"
+						rel="noopener noreferrer">LinkedIn</a>.
+				</p>
 			</div>
 		</section>
+	</main>
 
-	</div>
+	<footer id="contato" class="footer">
+		<div class="footer__inner reveal">
+			<p class="section__label">Contato</p>
+			<h2 class="footer__title">Vamos conversar.</h2>
+			<p class="footer__lede">São Paulo, SP. Aberto a conversas sobre liderança técnica, engenharia, ensino e
+				colaborações.</p>
+			<ul class="contact-links">
+				<li>
+					<small>
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail"></use></svg>
+						E-mail
+					</small>
+					<a href="mailto:cintra.70@gmail.com"><strong>cintra.70@gmail.com</strong></a>
+				</li>
+				<li>
+					<small>
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"></use></svg>
+						Telefone
+					</small>
+					<a href="tel:+5511989713618"><strong>(11) 98971-3618</strong></a>
+				</li>
+				<li>
+					<small>
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+						LinkedIn
+					</small>
+					<a href="https://www.linkedin.com/in/daniel-cintra-460a7218/" target="_blank"
+						rel="noopener noreferrer"><strong>daniel-cintra</strong></a>
+				</li>
+				<li>
+					<small>
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-github"></use></svg>
+						GitHub
+					</small>
+					<a href="https://github.com/DanielLCintra" target="_blank"
+						rel="noopener noreferrer"><strong>DanielLCintra</strong></a>
+				</li>
+				<li>
+					<small>
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-youtube"></use></svg>
+						YouTube
+					</small>
+					<a href="https://www.youtube.com/@DevFastOficial" target="_blank"
+						rel="noopener noreferrer"><strong>DevFast</strong></a>
+				</li>
+				<li>
+					<small>
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-map"></use></svg>
+						Local
+					</small>
+					<span><strong>São Paulo, Brasil</strong></span>
+				</li>
+			</ul>
+			<nav class="footer-nav" aria-label="Secundária">
+				<a href="#sobre">Sobre</a>
+				<a href="#livros">Livros</a>
+				<a href="#ensino">Ensino</a>
+				<a href="#credenciais">Credenciais</a>
+			</nav>
+			<p class="footer__copy">&copy; <span id="year"></span> Daniel Cintra. Todos os direitos reservados.</p>
+		</div>
+	</footer>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+	</script>
+	<script src="assets/js/site.js" defer></script>
 </body>
 
-
 </html>
-

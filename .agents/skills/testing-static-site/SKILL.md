@@ -7,38 +7,42 @@ This is a static HTML/CSS/JS personal website hosted on GitHub Pages. No build t
 
 ### Start Local Server
 ```bash
-cd /home/ubuntu/repos/DanielLCintra.github.io
+cd /Volumes/externo/Projetos/DanielLCintra.github.io
 python3 -m http.server 8080 &
 ```
 Then open http://localhost:8080 in the browser.
 
 ### What to Verify
-The site is a single-page layout (`index.html`) with anchor navigation. Key sections:
-- **Banner** (`#banner`): Photo, name, current role/title, certifications summary
-- **Sobre mim** (`#one`): About section with professional bio
-- **Skills** (`#two`): Technical skills list
-- **Currículo & Certificações** (`#three`): CV link (should point to LinkedIn) and certifications list
-- **DevFast** (`#four`): YouTube channel section with CTA button
-- **Curso Web Dev** (`#five`): Web development course section with CTA button
-- **Footer** (`#footer`): Contact info and social links (LinkedIn, GitHub, YouTube, Facebook)
+Single-page storytelling layout (`index.html`) with a short primary nav:
 
-### Menu Navigation
-Click "MENU" button (top-right) to open the navigation overlay. Verify all menu items are present and link to the correct anchors.
+**Primary nav (4):** Sobre · Livros · Ensino · Contato
+
+**Sections / story arc:**
+1. **Hero** (`#topo`) — brand, positioning, CTAs
+2. **Sobre** (`#sobre`) — bio + Itaú / Alura / FIAP + skills strip
+3. **Livros** (`#livros`) — Tech Lead na Prática (featured) + DevFast
+4. **Ensino** (`#ensino`) — entrevista Alura + 4 cursos Alura + YouTube/apostila
+5. **Credenciais** (`#credenciais`) — certifications (footer secondary link only)
+6. **Contato** (`#contato`) — contact + secondary footer nav
+
+### Images (local)
+- `images/profile_image_daniel.png` — hero
+- `images/tech-lead-na-pratica.jpg` — book cover
+- `images/devfast-do-zero-ao-dev.jpg` — DevFast cover
+- `images/entrevista-alura-tech-lead.jpg` — interview thumb
 
 ### External Links
-Verify that CTA buttons open in new tabs:
-- DevFast button → https://www.youtube.com/@DevFastOficial
-- Curso button → https://www.curso-webdev.com/?page=principal
-- CV link → LinkedIn profile
-- Footer social links → correct URLs
+- Tech Lead na Prática → https://www.amazon.com.br/dp/B0H7JX8TG8
+- DevFast Kindle → https://www.amazon.com.br/dp/B0G5HJSZFK
+- DevFast físico → https://loja.uiclap.com/titulo/ua138321/
+- Entrevista → https://www.youtube.com/watch?v=m4qPmVHfemo&t=30s
+- Alura courses (4) — links in `#ensino`
+- YouTube / apostila / LinkedIn / GitHub
 
 ## Notes
-- No CI/CD pipeline beyond Devin Review
-- No authentication or credentials needed for testing
-- The site uses the "Solid State" template from HTML5 UP
-- CSS/JS assets are in the `assets/` directory — do not modify unless explicitly asked
-- Content updates should only touch `index.html`
-- The site language is Portuguese (Brazilian)
+- Styles: `assets/css/site.css` · Scripts: `assets/js/site.js`
+- Language: Portuguese (Brazilian)
+- Keep primary nav to ~4 items; put secondary anchors in the footer
 
 ## Content Source
-Professional content comes from the owner's LinkedIn profile. When updating, use an exported LinkedIn PDF for accuracy rather than scraping the public profile URL (which may have limited access).
+Professional content comes from the owner's LinkedIn profile. When updating, prefer an exported LinkedIn PDF for accuracy.
