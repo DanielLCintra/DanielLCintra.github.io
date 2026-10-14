@@ -3,6 +3,8 @@
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav-list");
   const navLinks = document.querySelectorAll(".nav-list a");
+  const themeToggle = document.querySelector("[data-theme-toggle]");
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
 
   const onScroll = () => {
     if (!header) return;
@@ -11,6 +13,37 @@
 
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  const isDark = () => document.documentElement.getAttribute("data-theme") === "dark";
+
+  const syncThemeUi = () => {
+    const dark = isDark();
+    if (themeToggle) {
+      themeToggle.setAttribute(
+        "aria-label",
+        dark ? "Ativar tema claro" : "Ativar tema escuro"
+      );
+    }
+    if (themeMeta) {
+      themeMeta.setAttribute("content", dark ? "#0d141c" : "#f3f6fa");
+    }
+  };
+
+  const setTheme = (mode) => {
+    if (mode === "dark") document.documentElement.setAttribute("data-theme", "dark");
+    else document.documentElement.removeAttribute("data-theme");
+    try {
+      localStorage.setItem("theme", mode);
+    } catch (_) {}
+    syncThemeUi();
+  };
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      setTheme(isDark() ? "light" : "dark");
+    });
+  }
+  syncThemeUi();
 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
@@ -29,7 +62,7 @@
     });
   }
 
-  const sectionIds = ["sobre", "escopo", "impacto", "livros", "ensino", "contato"];
+  const sectionIds = ["sobre", "escopo", "impacto", "livros", "ensino", "escrita", "contato"];
   const sections = sectionIds
     .map((id) => document.getElementById(id))
     .filter(Boolean);
