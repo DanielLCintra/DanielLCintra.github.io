@@ -1394,7 +1394,11 @@ p:last-child {
 }
 
 .creds-band .subhead {
-  margin-top: 0.25rem;
+  margin-top: 2rem;
+}
+
+.creds-band .section__title + .subhead {
+  margin-top: 1.5rem;
 }
 
 .certs li {
