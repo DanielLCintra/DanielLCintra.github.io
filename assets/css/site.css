@@ -850,8 +850,8 @@ p:last-child {
 }
 
 .impact-list--cases {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.75rem 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2.5rem;
 }
 
 .impact--public {
