@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /elements.html
+Disallow: /generic.html
+Disallow: /apps/
+Disallow: /assets/sass/
+Disallow: /yellow_pages_preview.png
+
+Sitemap: https://daniellcintra.github.io/sitemap.xml

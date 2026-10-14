@@ -4,10 +4,28 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Daniel Cintra — Tech Lead, Autor & Educador</title>
+	<title>Daniel Cintra — Gestão de Engenharia & Tech Lead</title>
 	<meta name="description"
-		content="Daniel Cintra — Tech Lead no Itaú, Instrutor Alura, Professor FIAP. Autor de Tech Lead na Prática e DevFast. Cursos, liderança e engenharia." />
+		content="Daniel Cintra — gestor de engenharia e Tech Lead no Itaú. Instrutor Alura, professor FIAP e autor de Tech Lead na Prática." />
 	<meta name="theme-color" content="#f3f6fa" />
+	<link rel="canonical" href="https://daniellcintra.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:url" content="https://daniellcintra.github.io/" />
+	<meta property="og:title" content="Daniel Cintra — Gestão de Engenharia & Tech Lead" />
+	<meta property="og:description"
+		content="Gestor de engenharia e Tech Lead no Itaú. Instrutor Alura, professor FIAP e autor de Tech Lead na Prática." />
+	<meta property="og:image" content="https://daniellcintra.github.io/images/optimized/og-share.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Daniel Cintra — Gestão de Engenharia & Tech Lead" />
+	<meta name="twitter:description"
+		content="Gestor de engenharia e Tech Lead no Itaú. Instrutor Alura, professor FIAP e autor." />
+	<meta name="twitter:image" content="https://daniellcintra.github.io/images/optimized/og-share.jpg" />
+	<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+	<link rel="icon" href="images/optimized/favicon-32.png" type="image/png" sizes="32x32" />
+	<link rel="apple-touch-icon" href="images/optimized/apple-touch-icon.png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
@@ -17,6 +35,7 @@
 </head>
 
 <body>
+	<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 	<svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
 		<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
 			stroke-linecap="round" stroke-linejoin="round">
@@ -129,6 +148,7 @@
 			<nav id="menu-principal" aria-label="Principal">
 				<ul class="nav-list">
 					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#escopo">Gestão</a></li>
 					<li><a href="#livros">Livros</a></li>
 					<li><a href="#ensino">Ensino</a></li>
 					<li><a class="nav-cta" href="#contato">Contato</a></li>
@@ -141,99 +161,163 @@
 		<!-- 1. Quem sou -->
 		<section class="hero" aria-label="Apresentação">
 			<div class="hero__visual">
-				<img src="images/profile_image_daniel.png" width="800" height="800"
-					alt="Retrato profissional de Daniel Cintra" fetchpriority="high" />
+				<picture>
+					<source type="image/webp" srcset="images/optimized/profile-640.webp 640w, images/optimized/profile.webp 1200w"
+						sizes="(max-width: 900px) 100vw, 50vw" />
+					<img src="images/optimized/profile.jpg" width="1200" height="1200"
+						alt="Retrato profissional de Daniel Cintra" fetchpriority="high" decoding="async" />
+				</picture>
 			</div>
-			<div class="hero__copy">
+			<div class="hero__copy" id="conteudo">
 				<div class="hero__copy-inner">
-					<p class="hero__eyebrow">Tech Lead · Autor · Educador</p>
+					<p class="hero__eyebrow">Gestão de engenharia · Tech Lead</p>
 					<h1 class="hero__name">Daniel Cintra</h1>
-					<p class="hero__headline">De excelência técnica à liderança de pessoas, sistemas e decisões.</p>
-					<p class="hero__lede">Mais de 19 anos em TI. Lidero engenharia no Itaú, ensino na Alura e na FIAP, e
-						escrevo para quem está nessa transição — ou já vive nela.</p>
+					<p class="hero__headline">Amplio a capacidade do time com critério técnico, gente e operação.</p>
+					<p class="hero__lede">19+ anos em tecnologia; desde 2016 lidero times. Tech Lead no Itaú, instrutor
+						na Alura, professor na FIAP — e autor para quem vive a transição de excelência técnica à
+						liderança.</p>
 					<div class="btn-row">
-						<a class="btn btn--primary" href="#livros">Conhecer os livros</a>
-						<a class="btn btn--ghost" href="#ensino">Ver ensino</a>
+						<a class="btn btn--primary" href="#contato">Vamos conversar</a>
+						<a class="btn btn--ghost" href="#escopo">Como conduzo engenharia</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- 2. Contexto + prova de atuação -->
+		<!-- 2. Contexto + método + prova -->
 		<section id="sobre" class="section">
 			<div class="section__inner reveal">
 				<p class="section__label">Sobre</p>
 				<div class="about-grid">
 					<div>
-						<h2 class="section__title">Engenharia com critério. Liderança com gente.</h2>
+						<h2 class="section__title">Engenharia com critério. Gestão com gente e resultado.</h2>
 					</div>
 					<div class="about-body">
-						<p>Sou <strong>Daniel Loureiro Cintra</strong> — engenheiro de software, educador e autor. Em
-							quase duas décadas passei por transporte, agroindústria, educação, finanças e e-commerce.
-							O fio condutor é o mesmo: construir com qualidade e ajudar times a decidir melhor.</p>
-						<p>Hoje o trabalho se divide em três frentes que se alimentam: <strong>produção</strong> (Tech
-							Lead no Itaú), <strong>formação</strong> (Alura e FIAP) e <strong>conteúdo</strong> (livros,
-							cursos e comunidade). Formado em Administração, técnico em Informática, com especialização
-							em Ciência de Dados e IA pela PUC-RS.</p>
+						<p>Sou <strong>Daniel Loureiro Cintra</strong> — gestor de engenharia, educador e autor. Há mais
+							de 19 anos em tecnologia; desde 2016 lidero times. Passei por papéis de Tech Manager e Tech
+							Lead com equipe própria, múltiplas squads e interlocução com diretoria — sempre com o mesmo
+							foco: pessoas, capacidade de entrega e resultado de negócio.</p>
+						<p>Hoje sou Tech Lead no Itaú, instrutor na Alura, professor na FIAP e autor de livros sobre
+							liderança técnica e carreira. Especialização em Ciência de Dados e IA pela PUC-RS. 9 times
+							de engenharia em 6 empresas.</p>
+					</div>
+				</div>
+
+				<div class="method">
+					<p class="method__label">Meu modo de atuar</p>
+					<p class="method__lead">Problema complexo? A sequência é sempre a mesma.</p>
+					<ol class="method__steps">
+						<li><strong>Entendo</strong></li>
+						<li><strong>Torno visível</strong></li>
+						<li><strong>Distribuo</strong></li>
+						<li><strong>Institucionalizo</strong></li>
+					</ol>
+					<p class="method__axis">Três eixos: comunidade, competência e cultura.</p>
+				</div>
+
+				<div class="proof">
+					<div class="proof__item">
+						<strong>10</strong>
+						<span>anos liderando times de engenharia</span>
+					</div>
+					<div class="proof__item">
+						<strong>9</strong>
+						<span>times em 6 empresas — Tech Manager e Tech Lead</span>
+					</div>
+					<div class="proof__item">
+						<strong>2</strong>
+						<span>livros sobre liderança técnica e carreira</span>
+					</div>
+					<div class="proof__item">
+						<strong>4</strong>
+						<span>cursos de Tech Lead na Alura</span>
 					</div>
 				</div>
 
 				<div class="roles">
 					<article class="role">
 						<div class="role__org">
-							<span class="icon-badge" aria-hidden="true">
-								<svg class="icon"><use href="#i-briefcase"></use></svg>
-							</span>
+							<img class="role__logo" src="images/logos/itau.svg" width="48" height="48" alt=""
+								loading="lazy" decoding="async" />
 							<span>Itaú Unibanco</span>
 						</div>
 						<div>
 							<p class="role__title">Tech Lead</p>
-							<p class="role__meta">Desde fev. 2026 · São Paulo</p>
-							<p class="role__desc">Jornadas digitais de crédito, cloud-native na AWS, confiabilidade e
-								times de alta performance.</p>
+							<p class="role__meta">Desde 2024 · São Paulo</p>
+							<p class="role__desc">Liderança técnica de squad: direção de engenharia, qualidade,
+								operação sustentável e desenvolvimento de pessoas — com alinhamento forte ao negócio.
+							</p>
 						</div>
 					</article>
 					<article class="role">
 						<div class="role__org">
-							<span class="icon-badge" aria-hidden="true">
-								<svg class="icon"><use href="#i-book"></use></svg>
-							</span>
+							<img class="role__logo" src="images/logos/alura-mark.svg" width="48" height="48" alt=""
+								loading="lazy" decoding="async" />
 							<span>Alura</span>
 						</div>
 						<div>
 							<p class="role__title">Instrutor</p>
 							<p class="role__meta">Desde mar. 2026 · São Paulo</p>
-							<p class="role__desc">Cursos de liderança técnica, qualidade de código e alinhamento entre
-								engenharia e produto.</p>
+							<p class="role__desc">Formação de líderes técnicos: papel, qualidade, pessoas e
+								alinhamento engenharia–produto — com cenário real de quem vive a cadeira.</p>
 						</div>
 					</article>
 					<article class="role">
 						<div class="role__org">
-							<span class="icon-badge" aria-hidden="true">
-								<svg class="icon"><use href="#i-graduation"></use></svg>
-							</span>
+							<img class="role__logo" src="images/logos/fiap.svg" width="48" height="48" alt=""
+								loading="lazy" decoding="async" />
 							<span>FIAP</span>
 						</div>
 						<div>
 							<p class="role__title">Professor</p>
 							<p class="role__meta">Desde fev. 2025 · São Paulo</p>
-							<p class="role__desc">Desenvolvimento web com foco em JavaScript no frontend, turmas
-								presenciais e online.</p>
+							<p class="role__desc">Desenvolvimento web com JavaScript — turmas presenciais e online,
+								com foco em prática e mercado.</p>
 						</div>
 					</article>
 				</div>
+			</div>
+		</section>
 
-				<div class="skills-block">
-					<p class="skills-block__label">No dia a dia</p>
+		<section id="escopo" class="section scope">
+			<div class="section__inner reveal">
+				<p class="section__label">Gestão</p>
+				<h2 class="section__title">Como conduzo engenharia no dia a dia.</h2>
+				<p class="section__intro">Método e repertório formados na prática — com times próprios, múltiplas
+					frentes e conversa direta com a liderança sênior.</p>
+
+				<div class="scope-grid">
+					<article class="scope-card">
+						<p class="scope-card__kicker">Pessoas</p>
+						<h3 class="scope-card__title">Desenvolver quem entrega</h3>
+						<p>1:1s, feedback, plano de carreira, autonomia e continuidade — para o time crescer sem
+							depender de um único herói técnico.</p>
+					</article>
+					<article class="scope-card">
+						<p class="scope-card__kicker">Capacidade</p>
+						<h3 class="scope-card__title">Organizar a operação</h3>
+						<p>Prioridade visível, rituais que cabem na agenda, qualidade no fluxo e menos interrupção —
+							para a engenharia previsível e sustentável.</p>
+					</article>
+					<article class="scope-card">
+						<p class="scope-card__kicker">Resultados</p>
+						<h3 class="scope-card__title">Articular entrega e negócio</h3>
+						<p>Trade-offs claros, alinhamento com produto e stakeholders, e decisões técnicas que
+							agem no resultado — não só no código.</p>
+					</article>
+				</div>
+
+				<div class="scope-toolkit">
+					<p class="skills-block__label">Repertório</p>
 					<ul class="skills-cloud">
-						<li>JavaScript / TypeScript</li>
-						<li>React · Next.js · Vue</li>
-						<li>Node.js · Python · Java</li>
-						<li>AWS · Docker · Kubernetes</li>
-						<li>Arquitetura cloud-native</li>
-						<li>Liderança técnica</li>
-						<li>Agile · Scrum</li>
-						<li>IA no fluxo de engenharia</li>
+						<li>Contratação e onboarding</li>
+						<li>Avaliação de desempenho</li>
+						<li>PDI e carreira</li>
+						<li>Mediação de conflito</li>
+						<li>Recuperação de performance</li>
+						<li>Gestão de múltiplas squads</li>
+						<li>Reporte à diretoria</li>
+						<li>Priorização e capacidade</li>
 					</ul>
 				</div>
 			</div>
@@ -243,16 +327,21 @@
 		<section id="livros" class="books">
 			<div class="books__intro section__inner reveal">
 				<p class="section__label">Livros</p>
-				<h2 class="section__title">Do código à cadeira de Tech Lead — e do zero ao primeiro emprego.</h2>
-				<p class="section__intro">Dois livros, dois momentos da carreira: liderança técnica na prática e a
-					entrada no mundo da programação.</p>
+				<h2 class="section__title">Educação prática, conectada ao chão de fábrica da engenharia.</h2>
+				<p class="section__intro">Dois livros, a mesma missão: tornar tecnologia acessível e útil — da
+					liderança técnica ao primeiro passo como dev.</p>
 			</div>
 
 			<div class="book-feature">
 				<div class="book-feature__grid reveal">
 					<div class="book-cover">
-						<img src="images/tech-lead-na-pratica.jpg" width="1696" height="2528"
-							alt="Capa do livro Tech Lead na Prática" />
+						<picture>
+							<source type="image/webp"
+								srcset="images/optimized/tech-lead-na-pratica-480.webp 480w, images/optimized/tech-lead-na-pratica.webp 603w"
+								sizes="(max-width: 900px) 13.5rem, 16rem" />
+							<img src="images/optimized/tech-lead-na-pratica.jpg" width="603" height="900"
+								alt="Capa do livro Tech Lead na Prática" loading="lazy" decoding="async" />
+						</picture>
 					</div>
 					<div class="book-feature__copy">
 						<p class="section__label">Destaque</p>
@@ -280,8 +369,11 @@
 				<div class="section__inner reveal">
 					<article class="book-row">
 						<div class="book-row__cover">
-							<img src="images/devfast-do-zero-ao-dev.jpg" width="1283" height="2048"
-								alt="Capa do livro DevFast — Do Zero ao Dev" loading="lazy" />
+							<picture>
+								<source type="image/webp" srcset="images/optimized/devfast-do-zero-ao-dev.webp" />
+								<img src="images/optimized/devfast-do-zero-ao-dev.jpg" width="564" height="900"
+									alt="Capa do livro DevFast — Do Zero ao Dev" loading="lazy" decoding="async" />
+							</picture>
 						</div>
 						<div class="book-row__copy">
 							<p class="section__label">Também na estante</p>
@@ -305,16 +397,19 @@
 			<div class="section__inner reveal">
 				<p class="section__label">Ensino</p>
 				<h2 class="section__title">O que vivo no trabalho, ensino na plataforma.</h2>
-				<p class="section__intro">Cursos na Alura, conversa aberta sobre carreira e conteúdo gratuito para quem
-					está começando.</p>
+				<p class="section__intro">Da Alura ao DevFast: cursos, entrevista e material gratuito com a mesma
+					lente — cenário real, não teoria descolada.</p>
 
 				<article class="interview-inline">
 					<a class="interview__thumb"
 						href="https://www.youtube.com/watch?v=m4qPmVHfemo&t=30s"
 						target="_blank" rel="noopener noreferrer"
 						aria-label="Assistir entrevista na Alura">
-						<img src="images/entrevista-alura-tech-lead.jpg" width="1280" height="720"
-							alt="Thumbnail da entrevista na Alura" loading="lazy" />
+						<picture>
+							<source type="image/webp" srcset="images/optimized/entrevista-alura-tech-lead.webp" />
+							<img src="images/optimized/entrevista-alura-tech-lead.jpg" width="1280" height="720"
+								alt="Thumbnail da entrevista na Alura" loading="lazy" decoding="async" />
+						</picture>
 						<span class="interview__play" aria-hidden="true">
 							<svg class="icon icon--lg"><use href="#i-play"></use></svg>
 						</span>
@@ -519,6 +614,15 @@
 							<span>Full professional proficiency</span>
 						</div>
 					</li>
+					<li>
+						<span class="icon-badge icon-badge--sm" aria-hidden="true">
+							<svg class="icon icon--sm"><use href="#i-badge"></use></svg>
+						</span>
+						<div>
+							<strong>Management 3.0</strong>
+							<span>Liderança e gestão de times</span>
+						</div>
+					</li>
 				</ul>
 				<p class="certs-note">
 					Linha do tempo completa no
@@ -533,8 +637,8 @@
 		<div class="footer__inner reveal">
 			<p class="section__label">Contato</p>
 			<h2 class="footer__title">Vamos conversar.</h2>
-			<p class="footer__lede">São Paulo, SP. Aberto a conversas sobre liderança técnica, engenharia, ensino e
-				colaborações.</p>
+			<p class="footer__lede">São Paulo, SP. Aberto a conversas sobre liderança de engenharia, gestão de times
+				e formação de líderes técnicos.</p>
 			<ul class="contact-links">
 				<li>
 					<small>
@@ -584,6 +688,7 @@
 			</ul>
 			<nav class="footer-nav" aria-label="Secundária">
 				<a href="#sobre">Sobre</a>
+				<a href="#escopo">Gestão</a>
 				<a href="#livros">Livros</a>
 				<a href="#ensino">Ensino</a>
 				<a href="#credenciais">Credenciais</a>

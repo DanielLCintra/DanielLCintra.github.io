@@ -16,19 +16,47 @@
     toggle.addEventListener("click", () => {
       const open = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!open));
+      toggle.setAttribute("aria-label", open ? "Abrir menu" : "Fechar menu");
       nav.classList.toggle("is-open", !open);
     });
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Abrir menu");
         nav.classList.remove("is-open");
       });
     });
   }
 
-  const reveals = document.querySelectorAll(".reveal");
+  const sectionIds = ["sobre", "escopo", "livros", "ensino", "contato"];
+  const sections = sectionIds
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
 
+  const setCurrent = (id) => {
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href") || "";
+      const match = href === `#${id}`;
+      if (match) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
+  };
+
+  if ("IntersectionObserver" in window && sections.length) {
+    const sectionIo = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible?.target?.id) setCurrent(visible.target.id);
+      },
+      { rootMargin: "-30% 0px -55% 0px", threshold: [0.1, 0.25, 0.5] }
+    );
+    sections.forEach((el) => sectionIo.observe(el));
+  }
+
+  const reveals = document.querySelectorAll(".reveal");
   const show = (el) => el.classList.add("is-visible");
 
   if (!("IntersectionObserver" in window)) {
