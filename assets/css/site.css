@@ -1389,6 +1389,14 @@ p:last-child {
   margin: 0;
 }
 
+.certs--education {
+  margin-bottom: 0.5rem;
+}
+
+.creds-band .subhead {
+  margin-top: 0.25rem;
+}
+
 .certs li {
   display: flex;
   align-items: flex-start;
