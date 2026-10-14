@@ -849,6 +849,18 @@ p:last-child {
   border-top: 1px solid var(--line);
 }
 
+.impact-list--cases {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem 2rem;
+}
+
+.impact--public {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  max-width: 40rem;
+}
+
 .impact__kicker {
   font-size: 0.72rem;
   font-weight: 700;
@@ -885,6 +897,11 @@ p:last-child {
   font-size: 0.95rem;
   color: var(--ink);
   line-height: 1.45;
+}
+
+.impact__facts strong {
+  font-weight: 600;
+  color: var(--ink);
 }
 
 .impact__facts li::before {
@@ -1615,6 +1632,12 @@ p:last-child {
 }
 
 /* Responsive */
+@media (max-width: 1100px) {
+  .impact-list--cases {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .nav-toggle {
     display: flex;
@@ -1771,7 +1794,8 @@ p:last-child {
     grid-template-columns: 1fr;
   }
 
-  .impact-list {
+  .impact-list,
+  .impact-list--cases {
     grid-template-columns: 1fr;
     gap: 1.75rem;
   }

@@ -199,9 +199,9 @@
 							Lead com equipe própria, múltiplas squads e interlocução com diretoria — sempre com o mesmo
 							foco: pessoas, capacidade de entrega e resultado de negócio.</p>
 						<p>Hoje sou Tech Lead no Itaú, instrutor na Alura, professor na FIAP e autor de livros sobre
-							liderança técnica e carreira. Formado em Administração de Empresas, com especialização em
-							Ciência de Dados e Inteligência Artificial pela PUC-RS. 9 times de engenharia em 6
-							empresas.</p>
+							liderança técnica e carreira. Graduado em Administração pela Faculdade Sul Fluminense, com
+							especialização em Ciência de Dados e Inteligência Artificial pela PUC-RS. 9 times de
+							engenharia em 6 empresas.</p>
 					</div>
 				</div>
 
@@ -329,40 +329,68 @@
 		<section id="impacto" class="section">
 			<div class="section__inner reveal">
 				<p class="section__label">Impacto</p>
-				<h2 class="section__title">Prova pública — o que já está no mundo.</h2>
-				<p class="section__intro">Sem inventar métricas internas: o que dá para verificar fora do currículo
-					fechado.</p>
+				<h2 class="section__title">Casos reais — problema, decisão, resultado.</h2>
+				<p class="section__intro">Situações que vivi em squads que liderei e documentei em
+					<em>Tech Lead na Prática</em> — sem métricas internas confidenciais.</p>
 
-				<div class="impact-list">
+				<div class="impact-list impact-list--cases">
 					<article class="impact">
-						<p class="impact__kicker">Formação em escala</p>
-						<h3 class="impact__title">Liderança técnica ensinada na prática</h3>
-						<p class="impact__desc">O mesmo repertório de quem vive a cadeira de Tech Lead — em cursos,
-							livro e conversa pública.</p>
+						<p class="impact__kicker">Qualidade · Code review</p>
+						<h3 class="impact__title">De revisor único a critério distribuído</h3>
+						<p class="impact__desc">Em uma squad de e-commerce, PRs acumulavam porque só eu revisava com
+							profundidade. Velocidade caía; férias viravam gargalo.</p>
 						<ul class="impact__facts">
-							<li>4 cursos de Tech Lead na Alura (papel, qualidade, pessoas e produto)</li>
-							<li>Livro <em>Tech Lead na Prática</em> (Kindle e físico)</li>
-							<li>Entrevista Alura: “Tech Lead não é o mais técnico do time”</li>
+							<li><strong>Decisão:</strong> checklist no repositório, rotação de revisores, smells críticos
+								no board e quality gate no CI</li>
+							<li><strong>Resultado:</strong> em seis semanas, lead time de review caiu — mais pessoas
+								sabiam o que procurar, não alguém “mais rápido”</li>
 						</ul>
-						<a class="impact__link" href="#ensino">Ver ensino e entrevista
+						<a class="impact__link" href="#livros">Narrado no livro
 							<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
 						</a>
 					</article>
 					<article class="impact">
-						<p class="impact__kicker">Escopo de liderança</p>
-						<h3 class="impact__title">Times próprios, múltiplas frentes, interlocução sênior</h3>
-						<p class="impact__desc">Trajetória acumulada em papéis de Tech Manager e Tech Lead — com
-							equipe, operação e alinhamento ao negócio.</p>
+						<p class="impact__kicker">Continuidade · Bus factor</p>
+						<h3 class="impact__title">Sistema legado sem dono único</h3>
+						<p class="impact__desc">Uma engenheira saiu de férias como única especialista de um legado sem
+							documentação. O time ficou bloqueado.</p>
 						<ul class="impact__facts">
-							<li>10 anos liderando times de engenharia</li>
-							<li>9 times em 6 empresas</li>
-							<li>Hoje: Tech Lead no Itaú · Instrutor Alura · Professor FIAP</li>
+							<li><strong>Decisão:</strong> investigação pelo Git, correção do incidente e documentação
+								técnica imediata — sem heroísmo permanente</li>
+							<li><strong>Resultado:</strong> ritual no time: módulo crítico sem runbook mínimo deixa de
+								ter um único “dono”</li>
 						</ul>
-						<a class="impact__link" href="#sobre">Ver papéis atuais
+						<a class="impact__link" href="#escopo">Como conduzo engenharia
+							<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+						</a>
+					</article>
+					<article class="impact">
+						<p class="impact__kicker">Cultura · Incidente</p>
+						<h3 class="impact__title">Post-mortem sem caça às bruxas</h3>
+						<p class="impact__desc">Uma entrega da semana deixou de gerar um arquivo essencial para outro
+							sistema. A tentação era achar culpado.</p>
+						<ul class="impact__facts">
+							<li><strong>Decisão:</strong> correção em produção + post-mortem na causa sistêmica (regra
+								sobrescrita por projeto paralelo)</li>
+							<li><strong>Resultado:</strong> o time passou a trazer problemas mais cedo — aprender, não
+								punir</li>
+						</ul>
+						<a class="impact__link" href="#livros">Narrado no livro
 							<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
 						</a>
 					</article>
 				</div>
+
+				<article class="impact impact--public">
+					<p class="impact__kicker">Prova pública</p>
+					<h3 class="impact__title">O mesmo ofício, em escala de formação</h3>
+					<p class="impact__desc">4 cursos de Tech Lead na Alura, o livro <em>Tech Lead na Prática</em> e a
+						entrevista “Tech Lead não é o mais técnico do time” — o repertório de quem vive a cadeira,
+						aberto.</p>
+					<a class="impact__link" href="#ensino">Ver ensino e entrevista
+						<svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg>
+					</a>
+				</article>
 			</div>
 		</section>
 
@@ -611,7 +639,7 @@
 						</span>
 						<div>
 							<strong>Administração de Empresas</strong>
-							<span>Graduação</span>
+							<span>Graduação · Faculdade Sul Fluminense</span>
 						</div>
 					</li>
 					<li>

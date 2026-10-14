@@ -1,0 +1,4 @@
+.DS_Store
+*.pdf
+assets/*.pdf
+images/wallpaper*.png
