@@ -62,7 +62,7 @@
     });
   }
 
-  const sectionIds = ["sobre", "escopo", "impacto", "livros", "ensino", "escrita", "contato"];
+  const sectionIds = ["sobre", "escopo", "aliado", "livros", "ensino", "escrita", "contato"];
   const sections = sectionIds
     .map((id) => document.getElementById(id))
     .filter(Boolean);
