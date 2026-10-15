@@ -496,7 +496,7 @@ html[data-theme="dark"] .theme-toggle__moon {
 .hero {
   position: relative;
   display: block;
-  min-height: min(100svh, 46rem);
+  min-height: 100svh;
   overflow: hidden;
   color: #f4f7fb;
   background:
@@ -512,7 +512,7 @@ html[data-theme="dark"] .theme-toggle__moon {
   align-items: flex-end;
   width: min(100%, var(--max));
   margin: 0 auto;
-  min-height: min(100svh, 46rem);
+  min-height: 100svh;
   padding: calc(var(--nav-h) + 1.5rem) var(--gutter) clamp(3rem, 8vh, 5rem);
   box-sizing: border-box;
 }
@@ -578,11 +578,6 @@ html[data-theme="dark"] .theme-toggle__moon {
 }
 
 @media (min-width: 1400px) {
-  .hero,
-  .hero__copy {
-    min-height: min(100svh, 44rem);
-  }
-
   .hero__visual {
     width: min(54vw, 46rem);
   }
